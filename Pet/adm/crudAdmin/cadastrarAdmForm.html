@@ -1,0 +1,34 @@
+﻿
+<div style="margin-left:30px">
+<h1 id="lista"> Cadastro de Administrador </h1><br>
+<table>
+	<form action="crudAdmin/cadastrarAdmAction.php" method="POST">
+	<tr>
+        <td><input type="text" name="loginAdm" placeholder="Login" required
+                  maxlength="15">
+        </td>
+    </tr>
+    <tr>
+    	<td><input type="password" name="senhaAdm" id="senha"  title="Digite a sua senha" placeholder="Senha" required>
+        </td>
+    </tr>
+    <tr>
+    	<td><input type="password" name="senha2" required title="Digite sua senha corretamente" placeholder="Senha Novamente" oninput="ValidaSenha(this)">
+        </td>
+    </tr>
+    <tr>
+    	<td><input type="submit" value="OK"></td>
+     </tr>
+     </form>
+</table>
+
+ 		<script>
+			function ValidaSenha(input) {
+  				if (input.value != document.getElementById('senha').value) {
+    				input.setCustomValidity('Redigite sua senha corretamente.');
+  				} else {
+    				input.setCustomValidity('');
+  				}
+				}
+		</script>
+    </div>

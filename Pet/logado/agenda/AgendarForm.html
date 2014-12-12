@@ -1,0 +1,36 @@
+﻿<div id="cadastro" style="margin-left:12%">
+<br>
+<h1><font color="#FF0000">Permissão</font></h1><br>
+	<table>
+           <form action="agendaAction.php" method="POST" enctype='multipart/form-data' 
+            OnSubmit="return TestaCadastroPet()">
+        <tr>
+         		<td><strong>Hora Entrada</strong>:</td>
+         		<td><input name="HEntrada" required title="verificar se condiz com os horarios" type="time" 
+                     size="40">
+               </td>
+       </tr>
+        <tr>
+         		<td><strong>Hora Saida</strong>:</td>
+         		<td><input name="HSaida" required title="verificar se condiz com os outros horarios" type="time" 
+                     size="40">
+               </td>
+       </tr>
+       <tr>
+         	   <td><strong>Acesso</strong>:</td>
+         	   <td><select name="status">
+                   <option value="0" selected> </option>
+				   <option value="1">So Entrar</option>
+				   <option value="2" >Só sair</option>
+					<option value="3">Aberto</option>
+                    <option value="3">Fechado</option>		
+					</select>
+              </td>
+      </tr>
+            <td></td>
+            <td><br><input type= "reset" value= "Limpar"><input type="submit" value="Ok"></td>
+   </tr>
+         		  </form> 
+ </table>	
+  <a href="principal.php">Voltar</a> 
+</div>
